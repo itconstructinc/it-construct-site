@@ -23,7 +23,7 @@ export default function RequestConsultationPage() {
       <form
         className="space-y-6 rounded-2xl border p-6"
         method="post"
-        action="/api/consultation"
+        action="/api/request-consultation"
       >
         <div className="grid gap-4 sm:grid-cols-2">
           <Field label="Full name" name="name" required />
