@@ -16,13 +16,18 @@ export default function SiteHeader() {
           IT Construct Inc
         </Link>
 
-        <nav className="hidden gap-6 text-sm text-neutral-600 md:flex">
-          {nav.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-black">
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        <nav className="hidden gap-6 text-sm text-neutral-500 md:flex">
+  {nav.map((item) => (
+    <Link
+      key={item.href}
+      href={item.href}
+      className="transition-colors duration-200 hover:text-neutral-600"
+    >
+      {item.label}
+    </Link>
+  ))}
+</nav>
+
 
         <Link
           href="/request-consultation"
